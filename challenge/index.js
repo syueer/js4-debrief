@@ -27,7 +27,8 @@ document.body.onclick = (e) => {
 // Event Listener - Click the button add a new item
 button.onclick = () => {
   let node = document.createElement('li')
-  node.innerText = `${++length}th Item`
+  let inputValue = prompt('add new item')
+  node.innerText = inputValue
   node.classList.add('border-bottom')
   node.classList.add('m-3')
   list.appendChild(node)
